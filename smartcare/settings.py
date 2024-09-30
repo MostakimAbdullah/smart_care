@@ -28,6 +28,7 @@ SECRET_KEY = 'django-insecure-%qgbj%mciu__cx*-6&0^@on&)yd=15zi30l9t@s*&s-a1t$91m
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ["https://smart-care-ah70.onrender.com"]
 
 
 # Application definition
@@ -109,11 +110,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ]
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAuthenticated',
+#     ]
+# }
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
